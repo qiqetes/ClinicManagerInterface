@@ -1,5 +1,5 @@
 # ClinicManagerInterface
-Coded with github.com/BorjaSanz11 
+Coded with [@BorjaSanz11](https://github.com/BorjaSanz11).
 Application UI to manage the patients, doctors, and appointments of a imaginary medical clinic database.
 
 ## Developed with:
