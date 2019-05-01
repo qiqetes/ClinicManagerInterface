@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" style="-fx-background-color: #2A2E37;" stylesheets="@ApplicationStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appointmentmanagementapp.FXMLAddDoctorController">
+   <children>
+      <VBox layoutX="25.0" layoutY="26.0" prefHeight="851.0" prefWidth="600.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="950.0">
+               <children>
+                  <Text fill="#cdcdcd" layoutX="-1.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Doctor" wrappingWidth="939.3375644683838" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Segoe UI" size="55.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </AnchorPane>
+            <HBox layoutX="10.0" layoutY="478.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#d7d7d7" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Details" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Separator prefHeight="0.0" prefWidth="626.0">
+                     <HBox.margin>
+                        <Insets top="18.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="lName" minHeight="45.0" prefHeight="80.0" promptText="name" styleClass="inputField">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="lSurname" layoutX="120.0" layoutY="147.0" minHeight="45.0" prefHeight="80.0" promptText="surname" styleClass="inputField">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="lID" layoutX="120.0" layoutY="208.0" minHeight="45.0" prefHeight="80.0" promptText="id" styleClass="inputField">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="lTelephone" layoutX="10.0" layoutY="239.0" minHeight="45.0" prefHeight="80.0" promptText="telephone" styleClass="inputField">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <AnchorPane minHeight="45.0" prefHeight="45.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickBrowseImg" prefHeight="45.0" prefWidth="730.0" styleClass="browseImg" text="Browse image" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#d7d7d7" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Details">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+                  <Separator prefHeight="0.0" prefWidth="587.0">
+                     <HBox.margin>
+                        <Insets top="18.0" />
+                     </HBox.margin>
+                  </Separator>
+               </children>
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="53.0" text="Days:" textFill="#dadada" />
+                  <CheckBox fx:id="chMon" mnemonicParsing="false" text="Mon" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chTue" layoutX="163.0" layoutY="10.0" mnemonicParsing="false" text="Tue" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chWed" layoutX="256.0" layoutY="10.0" mnemonicParsing="false" text="Wed" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chThu" layoutX="349.0" layoutY="10.0" mnemonicParsing="false" text="Thu" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chFri" layoutX="442.0" layoutY="10.0" mnemonicParsing="false" text="Fri" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chSat" layoutX="535.0" layoutY="10.0" mnemonicParsing="false" text="Sat" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chSun" layoutX="628.0" layoutY="10.0" mnemonicParsing="false" text="Sun" textFill="#dadada" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Start hour:" textFill="#ebebeb" />
+                  <ChoiceBox fx:id="chStartHour" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <Label text="End hour:" textFill="#d7d7d7">
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="chEndHour" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Room:" textFill="#dadada" />
+                  <ChoiceBox fx:id="chRoom" prefHeight="31.0" prefWidth="258.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <GridPane prefHeight="122.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="30.0" />
+               </VBox.margin>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="bOk" layoutX="113.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickSubmit" styleClass="confirmationButton" text="Confirm" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Button layoutX="118.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickCancel" styleClass="cancelButton" text="Cancel" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

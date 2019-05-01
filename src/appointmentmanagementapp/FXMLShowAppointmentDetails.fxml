@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #2A2E37;" stylesheets="@ApplicationStyle.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="appointmentmanagementapp.FXMLShowAppointmentDetailsController">
+   <children>
+      <VBox layoutX="135.0" layoutY="38.0" prefHeight="459.0" prefWidth="700.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Text fill="#cdcdcd" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Details:" wrappingWidth="547.3375644683838">
+               <font>
+                  <Font name="Segoe UI" size="55.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="328.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="282.0" prefWidth="503.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="Doctor:" textFill="#dadada">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <GridPane prefHeight="224.0" prefWidth="503.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Doctor First Name:" textFill="#dadada">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Doctor Second Name:" textFill="#dadada" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lDocName" layoutX="10.0" layoutY="15.0" text="firstName" textFill="#dadada" GridPane.columnIndex="1" />
+                              <Label fx:id="lDocSurname" layoutX="262.0" layoutY="15.0" text="secondName" textFill="#dadada" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="10.0" layoutY="10.0" text="Patient" textFill="#dadada">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator layoutX="10.0" layoutY="31.0" prefWidth="200.0" />
+                        <GridPane layoutX="10.0" layoutY="34.0" prefHeight="224.0" prefWidth="503.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Patient First Name:" textFill="#dadada">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Patient Second Name:" textFill="#dadada" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lPatName" layoutX="10.0" layoutY="15.0" text="firstName" textFill="#dadada" GridPane.columnIndex="1" />
+                              <Label fx:id="lPatSurname" layoutX="262.0" layoutY="15.0" text="secondName" textFill="#dadada" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="10.0" layoutY="10.0" text="Room Details:" textFill="#dadada">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Separator layoutX="10.0" layoutY="31.0" prefWidth="200.0" />
+                        <GridPane layoutX="10.0" layoutY="34.0" prefHeight="224.0" prefWidth="503.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="50.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="45.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="68.0" minHeight="49.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.0" minHeight="50.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Room:" textFill="#dadada">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Appointment Date:" textFill="#dadada" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lRoom" layoutX="10.0" layoutY="15.0" text="firstName" textFill="#dadada" GridPane.columnIndex="1" />
+                              <Label fx:id="lAppDate" layoutX="262.0" layoutY="15.0" text="secondName" textFill="#dadada" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label layoutX="10.0" layoutY="15.0" text="Start Time:" textFill="#dadada" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lStartTime" layoutX="262.0" layoutY="45.0" text="20858261K" textFill="#dadada" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label layoutX="10.0" layoutY="105.0" text="End Time:" textFill="#dadada" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lEndTime" layoutX="262.0" layoutY="105.0" text="123456789" textFill="#dadada" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                        <AnchorPane prefHeight="92.0" prefWidth="503.0">
+                           <children>
+                              <Button layoutX="573.0" layoutY="46.0" mnemonicParsing="false" onAction="#onClickCloseWindow" prefHeight="46.0" prefWidth="101.0" styleClass="confirmationButton" text="Done" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

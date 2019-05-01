@@ -1,0 +1,81 @@
+*{
+    -col-bg: #2A2E37;
+    -col-sec: #373E48;
+    -col-lighter: #4A525F;
+    -col-light: #373E48;
+    -col-dark: #21262C;
+    -col-accent: #23DC98;
+    -col-accent-light: #258D8D;
+    -col-accent-dark: #294048;
+    -col-white: #E9EAEC;
+    -col-greyed: #8C8C8C;
+    -col-shadow: #222222;
+}
+.root {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent ;
+    
+}
+.hide{
+    visibility: hidden;
+}
+.hidePerson{
+    -fx-max-width: 0;
+}
+.hideAppointment{
+    -fx-max-width: 0;
+}
+
+/*dashboard*/
+.dashboard{
+    -fx-background-color: -col-dark;
+    -fx-effect: dropshadow(three-pass-box, black, 15, 0, 0, 0);
+}
+
+
+/*sidebar*/
+.fakeside{
+    -fx-fill: -col-light;
+    -fx-stroke: none;
+    -fx-effect: dropshadow(three-pass-box, -col-shadow, 10, 0, 0, 0);
+}
+
+.sideButton:hover{
+    -fx-background-color: -col-lighter;
+}
+
+.sideButton{
+    -fx-background-color: transparent;
+    -fx-border-radius: 0 0 0 0;
+}
+.sideButtonPressed{
+    -fx-background-color: -col-lighter;
+}
+
+/*ListView*/
+.list-view{
+    -fx-selection-bar: col-dark ;
+    -fx-background-color: -col-light;
+}
+.list-cell:filled:selected {
+    -fx-text-fill: white;
+    -fx-background-color: -col-lighter;
+}
+.list-cell:filled {
+    -fx-text-fill: -col-white;
+}
+.list-cell{
+    -fx-background-color: -col-light;
+}
+
+.functionalButtons{
+    -fx-effect: dropshadow(three-pass-box, -col-shadow, 10, 0, 0, 5);
+}
+.functionalButtonPane:hover .functionalButtons{
+    -fx-fill: -col-accent-light;
+}
+
+.table-view{
+    -fx-selection-bar: col-dark ;
+    -fx-background-color: -col-light;
+}
